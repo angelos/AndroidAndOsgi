@@ -1,0 +1,3 @@
+Private-Package: net.luminis.jfall2012.clock.threadbased
+Bundle-Activator: net.luminis.jfall2012.clock.threadbased.Activator
+Export-Package: net.luminis.jfall2012.clock.provider
