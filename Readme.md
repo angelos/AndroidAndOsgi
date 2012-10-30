@@ -20,7 +20,17 @@ The repository contains an Eclipse workspace. Clone it, point your Eclipse to it
 
 You can now run every project that is an Android project; the other project projects with the same number prefix are projects that contain BNDTools bundles.
 
+Anything I should know?
+==========
 
 Some examples are broken!
-=========
+-------
 That's the point, read the slidedeck :)
+
+Eclipse doesn't pick up the changes to my bundle!
+-------
+True. I use symlinks to get the examples into the Android project; Eclipse cannot pick up those changes, and you should refresh the Android project.
+
+I'm on Windows, and I find this offensive.
+-----
+Yes, I do use symlinks quite a lot, and those don't work on Windows. Sorry about that.
