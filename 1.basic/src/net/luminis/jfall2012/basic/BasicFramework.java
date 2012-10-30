@@ -21,20 +21,20 @@ public class BasicFramework extends Activity {
 		setContentView(R.layout.activity_basic_framework);
 
 		try {
-// Create and start a framework
-Map<String, Object> config = new HashMap<String, Object>();
-String cache = "/data/data/" + getApplicationContext().getPackageName() + "/cache";
-config.put(Constants.FRAMEWORK_STORAGE, cache);
-Felix felix = new Felix(config);
-felix.start();
+			// Create and start a framework
+			Map<String, Object> config = new HashMap<String, Object>();
+			String cache = "/data/data/" + getApplicationContext().getPackageName() + "/cache";
+			config.put(Constants.FRAMEWORK_STORAGE, cache);
+			Felix felix = new Felix(config);
+			felix.start();
 
-// Get to the bundle context
-BundleContext context = felix.getBundleContext();
+			// Get to the bundle context
+			BundleContext context = felix.getBundleContext();
 
-// Print something that shows we have a framework
-Log.d("JFall2012",
-		context.getProperty(Constants.FRAMEWORK_VENDOR)
-		);
+			// Print something that shows we have a framework
+			Log.d("JFall2012",
+					context.getProperty(Constants.FRAMEWORK_VENDOR)
+					);
 		} catch (BundleException e) {
 			// If this happens, remember to clean up nicely.
 		}
