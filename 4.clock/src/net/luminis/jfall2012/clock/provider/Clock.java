@@ -45,7 +45,6 @@ public class Clock implements ClockControl {
 				// add one hour
 				now = new Date(now.getTime() + 3600000);
 			}
-			System.out.println("TICK, dude!");
 			for (ClockListener listener : m_listeners) {
 				listener.tick(now.toString());
 			}
@@ -53,7 +52,6 @@ public class Clock implements ClockControl {
 	}
 	
 	public void listenerAdded(ClockListener listener) {
-		System.out.println("New listener!");
 		m_listeners.add(listener);
 	}
 	

@@ -10,7 +10,6 @@ public class Activator extends DependencyActivatorBase {
 
 	@Override
 	public void init(BundleContext context, DependencyManager manager) throws Exception {
-		System.out.println("clocklogger, starting");
 		manager.add(createComponent()
 				.setInterface(ClockListener.class.getName(), null)
 				.setImplementation(ClockLogger.class));

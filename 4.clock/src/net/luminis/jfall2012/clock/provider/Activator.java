@@ -11,7 +11,6 @@ public class Activator extends DependencyActivatorBase {
 
 	@Override
 	public void init(BundleContext context, DependencyManager manager) throws Exception {
-		System.out.println("clockprovider, starting");
 		manager.add(createComponent()
 				.setInterface(ClockControl.class.getName(), null)
 				.setImplementation(Clock.class)

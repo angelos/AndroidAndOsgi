@@ -26,7 +26,6 @@ public class ClockThread {
 	private class Clock extends TimerTask {
 		@Override
 		public void run() {
-			System.out.println("Tick!");
 			String time = new Date().toString();
 			for (ClockListener listener : m_listeners) {
 				listener.tick(time);

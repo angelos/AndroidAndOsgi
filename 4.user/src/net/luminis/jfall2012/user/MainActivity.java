@@ -194,7 +194,6 @@ public class MainActivity extends Activity {
 			recreate(cache);
 			config.put(Constants.FRAMEWORK_STORAGE, cache.toString());
 			config.put(Constants.FRAMEWORK_SYSTEMPACKAGES, SYSTEM_PACKAGES);
-			// TODO describe: we need some additional properties here.
 			config.put("org.osgi.framework.bundle.parent","framework");
 			config.put("felix.service.urlhandlers", "false"); // We need this on Android 4, and it doesn't harm 3.1
 			
