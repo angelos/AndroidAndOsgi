@@ -1,0 +1,3 @@
+-buildpath: org.apache.felix.dependencymanager,\
+	osgi.core
+-sub: *.bnd

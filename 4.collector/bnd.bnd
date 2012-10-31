@@ -1,0 +1,6 @@
+-buildpath: osgi.cmpn,\
+	org.apache.felix.dependencymanager,\
+	4.clock.provider;version=latest,\
+	4.clock.logger;version=latest,\
+	org.apache.felix.framework
+Private-Package: net.luminis.*, org.apache.*, org.osgi.*

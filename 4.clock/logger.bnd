@@ -1,0 +1,3 @@
+Bundle-Activator: net.luminis.jfall2012.clock.logger.Activator
+Private-Package: net.luminis.jfall2012.clock.logger
+Export-Package: net.luminis.jfall2012.clock
