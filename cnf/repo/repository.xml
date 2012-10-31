@@ -1,5 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet type='text/xsl' href='http://www.osgi.org/www/obr2html.xsl'?>
 
-<repository lastmodified='20111112014300.575' name='Local Repository'>
+<repository lastmodified='20121030175837.757' name='Local Repository'>
   <resource id='biz.aQute.bnd/1.51.1' presentationname='bnd' symbolicname='biz.aQute.bnd' uri='biz.aQute.bnd/biz.aQute.bnd-1.51.1.jar' version='1.51.1'>
     <description>
       A utility and plugin to wrap, build, print, or otherwise manipulate
@@ -545,6 +547,48 @@
     </require>
     <require extend='false' filter='(&amp;(package=org.osgi.service.cm)(version&gt;=1.3.0)(!(version&gt;=1.4.0)))' multiple='false' name='package' optional='false'>
       Import package org.osgi.service.cm ;version=[1.3.0,1.4.0)
+    </require>
+  </resource>
+  <resource id='org.apache.felix.dependencymanager/3.0.0' presentationname='Apache Felix Dependency Manager' symbolicname='org.apache.felix.dependencymanager' uri='org.apache.felix.dependencymanager/org.apache.felix.dependencymanager-3.0.0.jar' version='3.0.0'>
+    <description>
+      Provides dynamic service and component dependency management.
+    </description>
+    <size>
+      161274
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://www.apache.org/
+    </documentation>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Apache Felix Dependency Manager'/>
+      <p n='symbolicname' v='org.apache.felix.dependencymanager'/>
+      <p n='version' t='version' v='3.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.felix.dm'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='3.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.felix.dm.tracker'/>
+      <p n='uses' v='org.osgi.framework,org.apache.felix.dm'/>
+      <p n='version' t='version' v='3.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=org.apache.felix.dm.tracker)(version&gt;=3.0.0)(!(version&gt;=3.1.0)))' multiple='false' name='package' optional='false'>
+      Import package org.apache.felix.dm.tracker ;version=[3.0.0,3.1.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework ;version=[1.5.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.cm)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.cm ;version=[1.3.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.metatype)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.metatype ;version=[1.1.0,2.0.0)
     </require>
   </resource>
   <resource id='org.apache.felix.eventadmin/1.2.14' presentationname='Apache Felix EventAdmin' symbolicname='org.apache.felix.eventadmin' uri='org.apache.felix.eventadmin/org.apache.felix.eventadmin-1.2.14.jar' version='1.2.14'>

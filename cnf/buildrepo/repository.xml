@@ -166,7 +166,7 @@
       Import package junit.textui ;version=[3.8.0,4.0.0)
     </require>
   </resource>
-  <resource id='org.apache.felix.framework/4.0.1' presentationname='Apache Felix Framework' symbolicname='org.apache.felix.framework' uri='org.apache.felix.framework/org.apache.felix.framework-4.0.1.jar' version='4.0.1'>
+  <resource id='org.apache.felix.framework/4.0.3' presentationname='Apache Felix Framework' symbolicname='org.apache.felix.framework' uri='org.apache.felix.framework/org.apache.felix.framework-4.0.3.jar' version='4.0.3'>
     <description>
       OSGi R4 framework implementation.
     </description>
@@ -183,7 +183,7 @@
       <p n='manifestversion' v='2'/>
       <p n='presentationname' v='Apache Felix Framework'/>
       <p n='symbolicname' v='org.apache.felix.framework'/>
-      <p n='version' t='version' v='4.0.1'/>
+      <p n='version' t='version' v='4.0.3'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.osgi.framework.startlevel'/>
